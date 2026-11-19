@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "내 이미지 모음",
+  "version": "0.1",
+  "author": "준토폴리오",
+  "description": "웹페이지의 이미지를 우클릭으로 모아 두고 메모를 남기는 확장 프로그램",
+  "permissions": ["contextMenus", "storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "내 이미지 모음",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup.html"
+  }
+}
